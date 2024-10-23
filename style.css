@@ -21,8 +21,7 @@ body{
 
     margin: 0 auto;
     width: 80%;
-    /* height: 80%; */
-    height: fit-content;
+    height: 80%;
     max-width: 900px;
     background-color: rgb(255, 255, 255);
     padding: 2rem;
@@ -129,8 +128,15 @@ body{
 }
 
 @media (max-width:625px) {
+    .container{
+        gap: 1rem;
+    }
     #timer_content{
         flex-direction: column;
+        gap: 0.4rem;
+    }
+    .progress_container{
+        width: 90%;
     }
     .user_input_container{
         flex-direction: column;
