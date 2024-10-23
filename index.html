@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="timer_container">
+            <h1 class="timer_title">Event Timer</h1>
+            <div id="timer_content">
+                <div >
+                    <span class="days">00</span>
+                    Days
+                </div>
+                <div >
+                    <span class="hours">00</span>
+                    Hrs
+                </div>
+                <div >
+                    <span class="minutes">00</span>
+                    mins
+                </div>
+                <div >
+                    <span class="seconds">00</span>
+                    Sec
+                </div>
+            </div>
+        </div>
+        
+        
+        <hr>
+        <h1 class="progress_title">Progress Bar</h1>
+        <div class="progress_container">
+            <div id="progress_bar"></div>
+        </div>
+        
+        <div class="user_input_container">
+            <label for="user_input" id="user_input_label">Select Event Date :</label>
+            <input type="datetime-local" name="user_input" id="user_input">
+            <button id="mySubmit">Start Timer</button>
+        </div>
+
+        <audio id="endSound" preload="auto">
+            <source src="lofi.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
